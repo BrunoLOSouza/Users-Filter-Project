@@ -1,0 +1,45 @@
+/* users-list.component.scss */
+
+.users-list {
+    width: 100%;
+    
+    /* Estilo da tabela */
+    .mat-table {
+        width: 100%;
+        background-color: #fff;
+        border-collapse: collapse;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Estilo do cabeçalho da tabela */
+    .mat-header-cell {
+        background-color: #1e3a8a;
+        color: #fff;
+        font-weight: 600;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        padding: 16px 24px;
+    }
+
+    /* Estilo das células do corpo */
+    .mat-cell {
+        padding: 12px 24px;
+        border-bottom: 1px solid #e9ecef;
+        color: #495057;
+    }
+
+    /* Efeito de hover nas linhas */
+    .mat-row {
+        transition: background-color 0.2s ease-in-out;
+        &:hover {
+            background-color: #f8f9fa;
+        }
+    }
+
+    /* O estilo original do professor para o cursor */
+    &__item {
+        cursor: pointer;
+    }
+}

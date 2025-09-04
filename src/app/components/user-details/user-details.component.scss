@@ -1,0 +1,57 @@
+/* user-details.component.scss */
+
+.user-details {
+    /* Transforma o painel em um cartão flutuante */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    
+
+    /* Título da seção */
+    & > .mat-list-item:first-child {
+        padding: 0 0 16px;
+        display: block;
+        
+        .mat-h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1e3a8a;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 8px;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    /* Estilo para os itens de dados */
+    & > .mat-list-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 0;
+    }
+
+    /* Estilo para a linha divisória */
+    mat-divider {
+        background-color: #e9ecef;
+        margin: 0;
+    }
+
+    /* Estilo para os rótulos */
+    .mat-h2 {
+        font-weight: 500;
+        color: #495057;
+        margin-right: 16px;
+        flex-shrink: 0;
+    }
+
+    /* Estilo para os valores */
+    .mat-h3 {
+        font-size: 0.9rem; /* REDUZ O TAMANHO DA FONTE AQUI */
+        color: #495057;
+        text-align: right;
+        flex-grow: 1;
+        word-break: normal;
+    }
+}
